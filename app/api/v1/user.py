@@ -15,7 +15,7 @@ def create_user_view(user: UserCreate, db: Session = Depends(get_db)):
 
 # ユーザー情報取得
 @router.get("/users/{user_id}", response_model=UserOut)
-def read_user_view(user_id: int, db: Session = Depends(get_db)):
+def read_user_view(user_id: str, db: Session = Depends(get_db)):
     user = get_user_by_id(db, user_id)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")

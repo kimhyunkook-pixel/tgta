@@ -14,4 +14,3 @@ app = FastAPI()
 # ルーター登録
 app.include_router(hello.router, prefix="/api/v1")
 app.include_router(user.router, prefix="/api/v1", tags=["Users"])
-app.include_router(user.router)
