@@ -5,7 +5,7 @@ class User(Base):
     __tablename__ = "user"
 
     no = Column(Integer, primary_key=True, autoincrement=True)               # 内部用連番（主キー）
-    id = Column(String(8), nullable=False, unique=True)                      # ログインID（ユニーク）
+    id = Column(String(8), nullable=False, unique=True)                      # ユーザーID（ユニーク）
     pw = Column(String(100), nullable=False)                                 # ハッシュ化されたパスワード
     email = Column(String(150), nullable=True)                               # メールアドレス（任意）
     pref_code = Column(String(2), nullable=False, default="00")              # 都道府県コード（JIS X 0401）
