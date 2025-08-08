@@ -3,6 +3,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./user/01_login";
 import HomePage from "./home/home";
+import ComparePageMain from "./compare/main"
 import AppLayout from "./components/AppLayout";
 
 function App() {
@@ -16,6 +17,11 @@ function App() {
           </AppLayout>
         }
         />
+        <Route path="/compare" element={
+          <AppLayout>
+            <ComparePageMain />
+          </AppLayout>
+        } />
       </Routes>
     </BrowserRouter>
   );

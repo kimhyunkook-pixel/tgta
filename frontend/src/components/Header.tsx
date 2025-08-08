@@ -1,5 +1,8 @@
 // frontend/src/components/Header.tsx
 
+import { Link } from "react-router-dom";
+import { ReactComponent as Logo } from "../assets/drarLogo.svg"; //
+
 const Header = () => {
   const userId = localStorage.getItem("user_id") || "ゲスト";
 
@@ -21,7 +24,12 @@ const Header = () => {
         alignItems: "center",
       }}
     >
-      <div style={{ fontWeight: "bold" }}>TGTA</div>
+      <Link to="/home" style={{ display: "flex", alignItems: "center", border: "#FFFFFF thin solid" }}>
+        <div style={{ height: "40px" }}>
+          <Logo style={{ height: "100%", width: "auto", display: "block" }} />
+        </div>
+      </Link>
+
       <div>
         <span style={{ marginRight: "1rem" }}>ようこそ, {userId} さん</span>
         <button onClick={handleLogout}>ログアウト</button>

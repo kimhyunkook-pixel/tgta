@@ -1,0 +1,14 @@
+<svg
+  viewBox="0 0 1280 720"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  overflow="hidden"
+>
+  <g>
+    <rect x="340" y="60" width="600" height="600" fill="#004190"/>
+    <text fill="#FFFFFF" font-family="Arial,Arial_MSFontService,sans-serif" font-weight="700" font-size="318.667" transform="translate(374.917 329)">D</text>
+    <text fill="#FFFFFF" font-family="Arial,Arial_MSFontService,sans-serif" font-weight="700" font-size="318.667" transform="translate(674.917 329)">R</text>
+    <text fill="#FFFFFF" font-family="Arial,Arial_MSFontService,sans-serif" font-weight="700" font-size="318.667" transform="translate(374.917 629)">A</text>
+    <text fill="#FFFFFF" font-family="Arial,Arial_MSFontService,sans-serif" font-weight="700" font-size="318.667" transform="translate(674.917 629)">R</text>
+  </g>
+</svg>
