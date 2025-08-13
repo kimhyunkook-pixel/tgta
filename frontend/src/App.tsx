@@ -1,10 +1,10 @@
 // frontend/src/App.tsx
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LoginPage from "./user/01_login";
-import HomePage from "./home/home";
-import ComparePageMain from "./compare/main"
-import AppLayout from "./components/AppLayout";
+import LoginPage from "./pages/01_user/01_login";
+import HomePage from "./pages/02_home/01_main";
+import ComparePageMain from "./pages/03_compare/01_main"
+import AppLayout from "./pages/00_common/components/AppLayout";
 
 function App() {
   return (

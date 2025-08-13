@@ -1,10 +1,17 @@
 {
+  "private": true,
   "dependencies": {
     "axios": "^1.11.0",
     "react-router-dom": "^7.7.1"
   },
   "devDependencies": {
     "@svgr/rollup": "^8.1.0",
+    "concurrently": "^9.2.0",
     "vite-plugin-svgr": "^4.3.0"
+  },
+  "scripts": {
+    "dev:api": "python -m uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000",
+    "dev:web": "npm --prefix frontend run dev",
+    "dev": "concurrently -k -n api,web -c magenta,cyan \"npm run dev:api\" \"npm run dev:web\""
   }
 }

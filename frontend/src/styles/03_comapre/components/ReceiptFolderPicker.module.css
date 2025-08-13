@@ -1,0 +1,11 @@
+.label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004190;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.input {
+  display: none;
+}
